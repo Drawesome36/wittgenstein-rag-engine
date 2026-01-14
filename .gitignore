@@ -1,5 +1,13 @@
 # Wittgenstein RAG Pipeline - Git Ignore File
 
+# ==================== LOCAL CONFIG ====================
+# Claude Code configuration (local settings)
+.claude/
+
+# ==================== SOURCE DATA (COPYRIGHT) ====================
+# Exclude source texts (copyright materials, can be re-downloaded)
+wittgenstein_obras/
+
 # ==================== PROCESSED DATA ====================
 # Exclude processed corpus (large files, regenerable)
 wittgenstein_corpus_clean.jsonl
