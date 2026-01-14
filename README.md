@@ -448,6 +448,7 @@ This corpus includes texts from [The Wittgenstein Project](https://www.wittgenst
 ## 📧 Contact
 
 For questions, issues, or suggestions:
+- Email: dev@hispania.io
 - Open an issue on GitHub
 - Check `CLAUDE.MD` for AI assistant context
 - Review `README_CORPUS.md` for detailed specifications
