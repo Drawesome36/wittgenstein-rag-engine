@@ -1,0 +1,120 @@
+# Wittgenstein RAG Pipeline - Git Ignore File
+
+# ==================== PROCESSED DATA ====================
+# Exclude processed corpus (large files, regenerable)
+wittgenstein_corpus_clean.jsonl
+*.jsonl
+
+# Exclude embedding files (very large, API-dependent)
+*.parquet
+*.npy
+*.pkl
+embeddings/
+vector_db/
+
+# ==================== PYTHON ====================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# ==================== SYSTEM FILES ====================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ==================== TEMPORARY FILES ====================
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# ==================== DO NOT IGNORE ====================
+# Keep Python scripts
+!*.py
+
+# Keep documentation
+!*.md
+!*.MD
+
+# Keep source data directory (but see below)
+!wittgenstein_obras/
+
+# ==================== SOURCE DATA (OPTIONAL) ====================
+# Uncomment the following line if you want to exclude
+# the downloaded Markdown files (they can be re-downloaded)
+# wittgenstein_obras/*.md
+
+# Keep the directory itself but ignore contents (alternative approach)
+# wittgenstein_obras/*
+# !wittgenstein_obras/.gitkeep
+
+# ==================== TESTING ====================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ==================== MISC ====================
+# Environment variables (if you add API keys later)
+.env
+.env.local
+
+# Backup files
+*.bak
+*.backup
